@@ -110,13 +110,13 @@ transition: all .2s;
    .image-about {
        margin-left: -30px;
    }
- .image-testimonial {
+.image-testimonial {
        height: 200px;
        width: 200px;
-       margin-left: -55%;
+       margin-left: -60%;
    }
    .text-testimonial {
-    margin-left: -55%;
+    margin-left: -60%;
    }
      
 }
