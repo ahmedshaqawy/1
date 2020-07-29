@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  
+    font-family: 'Raleway', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
+  background-attachment: fixed;
+
+    height: 98vh;
+}
+
+.header1 {
+    animation-name: moveinright;
+    animation-duration: 1s;
+    font: bold;
+    position: absolute; left: 49%; top: 63vh; transform: translate(-50%, -50%); color: #66FCF1;
+    margin-top: 20px;
+}
+@keyframes moveinright {
+    0% {
+       
+        margin-left: -400px;
+    }
+}
+
+.logo {
+position: absolute; top: -40vh; left: 50%; transform: translate(-50%, 50%);
+transition: all .2s;
+}
+.logo:hover {
+    width: 650px; height: 610px;
+    transition: all .2s;
+}
+.header2 {
+    animation-name: moveinleft ;
+    animation-duration: 1s;
+    color: #C5C6C7;
+    position: absolute;
+    top: 73vh;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+@keyframes moveinleft {
+    0% {
+        
+        margin-left: 400px;
+       
+    }
+}
+
+.button1 {
+    position: absolute; top: 83vh; left: 49%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color:#66FCF1 ;
+    padding: 10px;
+    border: 2px solid #C5C6C7;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all .3s;
+}
+.button1:hover {
+    color: black;
+    background-color: white;
+    transition: all .3s;
+}
+.span1 {
+    color:#66FCF1 ;
+    position: absolute; top: 92vh;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    transition: all .3s;
+}
+.span1:hover {
+    font-size: 70px;
+    transition: all .3s;
+}
+.span1:active {
+    font-size: 40px;
+    transition: all .3s;
+}
+@media (min-width: 0px) and (max-width: 800px) {
+    .logo {
+        text-align: center;
+        margin-top: 6rem;
+        height: 400px; width: 400px;
+    }
+    .logo:hover {
+        height: 430px; width: 430px;
+    }
+    .header1 {
+      
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+    }
+    .header2 {
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
+    }
+   .image-about {
+       margin-left: -30px;
+   }
+   .image-testimonial {
+       height: 200px;
+       width: 200px;
+       margin-left: -50%;
+   }
+   .text-testimonial {
+       margin-left: -50%;
+   }
+     
+}
+@media (min-width: 800px) and (max-width: 1000px ) {
+    .logo {
+        text-align: center;
+        margin-top: 6rem;
+        height: 430px; width: 430px;
+    }
+    .logo:hover {
+        height: 450px; width: 450px;
+    }
+    .image-testimonial {
+        height: 200px;
+        width: 200px;
+        margin-left: -40%;
+    }
+    .text-testimonial {
+        margin-left: -40%;
+    }
+   
+   
+    .header1 {
+        font-size: 55px;
+        width: 100%;
+        text-align: center;
+    }
+  .image-about {
+      margin-left: -30px;
+  }
+    
+    .header2 {
+        margin-top: .3rem;
+        font-size: 45px;
+    }
+    .button1 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .logo {
+        text-align: center;
+        margin-top: 6rem;
+        height: 430px; width: 430px;
+    }
+    .logo:hover {
+        height: 450px; width: 450px;
+    }
+    .image-testimonial {
+        height: 250px;
+        width: 250px;
+        margin-left: -35%;
+    }
+   
+    .text-testimonial {
+        margin-left: -35%;
+    }
+}
+@media (min-width: 1200px)   {
+    .logo {
+        text-align: center;
+        margin-top: 6rem;
+        height: 430px; width: 430px;
+    }
+    .logo:hover {
+        height: 450px; width: 450px;
+    }
+    .image-testimonial {
+        height: 300px;
+        width: 300px;
+        margin-left: -35%;
+    }
+    .text-testimonial {
+        margin-left: -35%;
+    }
+    
+  
+    
+    .logo:hover {
+        height: 480px; width: 480px;
+    }
+    .header1 {
+        font-size: 55px;
+        width: 100%;
+        text-align: center;
+    }
+    .header2 {
+        margin-top: .3rem;
+        font-size: 45px;
+    }
+    .button1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (min-width: 1200px)  and (max-height: 2000px) {
+    .logo {
+        text-align: center;
+        margin-top: 9rem;
+        height: 450px; width: 450px;
+    }
+    .logo:hover {
+        height: 450px; width: 450px;
+    }
+}
+.container1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
+   
+    background-attachment: fixed;
+    color: white;
+    padding-top: 40px;
+    background-color: black;
+}
+.slideshow {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
+   
+    background-attachment: fixed;
+    color: white;
+}
+@media (min-height: 0px) and (max-height: 500px) {
+    .logo {
+        text-align: center;
+        margin-top: 8rem;
+        height: 240px; width: 240px;
+    }
+    .logo:hover {
+        height: 230px; width: 230px;
+    }
+    .header1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .header2 {
+        margin-top: .3rem;
+        font-size: 20px;
+    }
+    .button1 {
+
+text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-height: 500px) and (max-height: 600px) {
+    .logo {
+        text-align: center;
+        margin-top: 12rem;
+        height: 300px; width: 300px;
+    }
+    .logo:hover {
+        height: 320px; width: 320px;
+    }
+    .header1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    .header2 {
+        margin-top: .3rem;
+        font-size: 20px;
+    }
+    .button1 {
+
+text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media (min-height: 601px) and (max-height: 800px) {
+    .logo {
+        text-align: center;
+        margin-top: 12rem;
+        height: 350px; width: 350px;
+    }
+    .logo:hover {
+        height: 320px; width: 320px;
+    }
+    .header1 {
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+    .header2 {
+        margin-top: .3rem;
+        font-size: 30px;
+    }
+}
