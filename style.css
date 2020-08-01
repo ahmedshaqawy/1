@@ -28,7 +28,9 @@ header {
         margin-left: -400px;
     }
 }
-
+.counter {
+    margin-top: -3.8rem;
+}
 .logo {
 position: absolute; top: -40vh; left: 50%; transform: translate(-50%, 50%);
 transition: all .2s;
@@ -88,6 +90,7 @@ transition: all .2s;
     transition: all .3s;
 }
 @media (min-width: 0px) and (max-width: 800px) {
+    
     .logo {
         text-align: center;
         margin-top: 6rem;
@@ -110,7 +113,7 @@ transition: all .2s;
    .image-about {
        margin-left: -30px;
    }
-.image-testimonial {
+   .image-testimonial {
        height: 200px;
        width: 200px;
        margin-left: -60%;
@@ -305,4 +308,40 @@ text-align: center;
         margin-top: .3rem;
         font-size: 30px;
     }
+}
+.features {
+    font-size: 24px;
+    color: white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
+  background-attachment: fixed;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.text1 {
+    margin-top: 50px;
+}
+.text2 {
+    margin-top: 50px;
+}
+.imagefeatures {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 40px;
+    border: 5px solid aqua;
+}
+.contact {
+    color: white;
+    padding-top: 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
+  background-attachment: fixed;
+}
+.imagecontact {
+    margin-top: 40px;
+    width: 450px;
+    height: 800px;
+    border-radius: 40px;
+    border: 4px solid aqua;
+}
+.form1 {
+    margin-top: 40px;
 }
