@@ -14,10 +14,7 @@ body {
 header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  -webkit-background-size: cover; 
+
 transition: all .3s;
     height: 105vh;
 }
@@ -245,10 +242,7 @@ transition: all .2s;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
    padding-bottom: 40px;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    -webkit-background-size: cover; 
+   
     color: white;
     padding-top: 40px;
     background-color: black;
@@ -257,10 +251,7 @@ transition: all .2s;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
    
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    -webkit-background-size: cover; 
+    
     color: white;
 }
 @media (min-height: 0px) and (max-height: 500px) {
@@ -337,10 +328,7 @@ text-align: center;
     color: white;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  -webkit-background-size: cover; 
+
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -361,10 +349,7 @@ text-align: center;
     padding-top: 40px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  -webkit-background-size: cover; 
+ 
   padding-bottom: 150px;
   
 }
@@ -385,10 +370,7 @@ text-align: center;
   padding-bottom: 15vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(https://wallpaperaccess.com/full/1244800.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  -webkit-background-size: cover; 
+ 
     color: white;
    
 }
@@ -420,10 +402,7 @@ text-align: center;
 .download {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.403), black) , url(1.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
-  -webkit-background-size: cover; 
+ 
   color: white;
   padding-top: 40px;
 
@@ -435,10 +414,7 @@ text-align: center;
     text-align: center;
     padding-left: 11px;  background-image: url(https://c1.wallpaperflare.com/preview/790/198/550/table-wood-fresh-organic.jpg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    -webkit-background-size: cover; 
+  
    background-size: cover;
 }
 footer {
