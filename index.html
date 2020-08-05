@@ -17,25 +17,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;0,900;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <Link rel="stylesheet" href="fontawesome.min.css">
-     
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="style.css">
+  
     <title>SHJR</title>
     <link rel="icon" href="IMG_2410 2.PNG">
   </head>
   <body>
- <header class="header">
+  <nav class="navbar navbar-toggleable-md navbar-inverse"  style="background-color: black; color: aqua; z-index: 2000; position: fixed; width: 100%;" >
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <Span class="navbar-toggler-icon"></Span>
+    </button>
+    <a class="navbar-brand" style="color: aqua; " href="#home">SHJR</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: aqua;">
+      <ul class="navbar-nav ml-auto">
+        <Li class="nav-item">
+          <A class="nav-link" style="color: aqua; " id="home1"  href="#home">Home</A>
+        </Li>
+        <li class="nav-item">
+          <A class="nav-link" style="color: aqua; " id="about1" href="#about-us" id="about">About Us</A>
+        </li>
+        <Li class="nav-item">
+          <a class="nav-link" style="color: aqua;" id="testi1" href="#testimonial">Achivements</a>
+        </Li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: aqua;" id="features1" href="#features">Features</a>
+        </li>
+        <Li class="nav-item">
+          <a class="nav-link"href="#contact" style="color: aqua; " id="contact1">Contact Us</a>
+        </Li>
+      </ul>
+    </div>
+  </nav> 
+<script>
+  $(window).scroll(function(e) {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 150 ) {
+      document.querySelector(".navbar").style.opacity = "1";
+      
+    } else {
+      document.querySelector(".navbar").style.opacity = "0";
+    }
+  });
+  $(".nav-item").click(function() {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 3000 );
+        return false;
+      }
+    }
+    
+  });
+  $(".navbar li a").click(function() {
+    $(".navbar li a").parent().removeClass("actives");
+    $("#about").removeClass("actives");
+    $(this).parent().addClass("actives");
+  });
+  
+ 
+
+</script>
+ <header class="header" id="home" >
    <Div>
    <Img src="IMG_2410 2.PNG" height="600px" width="600px" class="logo">
     <h1 class="header1">SHARQAWY JUNIOR</h1>
     <h3 class="header2">Escape Ordinary</h3>
-    <button class="button1">Learn more..</button>
-    <span class="span1" >&Darr;</span>
+   <a href="#about-us" class="button1">Learn more..</a>
+  <a href="#about-us" class="span1">&darr;</a>
 </Div>
- </header>
- <div class="line1" style="border-bottom: 2px solid #66FCF1;"></div>
+</header>
+<script>
+  $(".span1").click(function() {
+    $(".navbar li a").parent().removeClass("actives");
+    $("#about").addClass("actives");
+  });
+  $(".button1").click(function() {
+  $(".navbar li a").parent().removeClass("actives");
+  $("#about").addClass("actives");
+  });
+  </script>
+ <div class="line1" style="border-bottom: 3px solid #66FCF1;"></div>
 
  </Div>
- <section class="container1">
+ <section class="container1" id="about-us">
    <Div class="container1">
      <Div class="container">
        <Div class="row">
@@ -77,7 +150,7 @@
    
    </section>
    <div class="line1" style="border-bottom: 2px solid #66FCF1;"></div>
-   <section class="text-center slideshow" style="padding-top: 40px; padding-bottom: 40px;">
+   <section class="text-center slideshow" style="padding-top: 40px; padding-bottom: 40px;" id="testimonial" >
      <DIv class="wrapper-carousel-fix">
        <Div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
        data-interval="false">
@@ -112,9 +185,9 @@
       </Div>
      </DIv>
    </section><div class="line" style="border-bottom: 3px solid aqua;"></div>
-  <section class="features">
+  <section class="features" id="features">
     <div class="container">
-  
+    
       <div class="row">
         <div class="col">
        1- All athletes with different sports can join us, they will find all their needs
@@ -132,7 +205,7 @@
     </div>
   </section> <Div class="line" style="border-bottom: 3px solid aqua;"></Div>
    <!--Section Contact-->
-   <section class="contact">
+   <section class="contact"  id="contact">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -163,9 +236,10 @@
               <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
             </div>
             
-          
            
-            <button type="submit" class="btn" style="background-color: aqua;">Submit</button>
+           
+            <button type="submit" class="btn" style="background-color: aqua; margin-bottom: 40px;">Submit</button>
+        
           </form>
         </div>
         <div class="col">
@@ -175,9 +249,135 @@
     
     </div>
    </section>
+ 
+  <!--Section Counter --Beginning-- -->
+  <section class="counter text-center">
+    <Div class="content-counter">
+      <Div class="container">
+        <Div class="row text-center">
+        
+           <Div class="col-md-3">
+             <Div class="counter-item">
+               <Div><i class="fas fa-dumbbell" ></i></Div>
+            
+              <p class="paragraph-counter">Training Plans Given</p>
+             </Div>
+           </Div>
+           <Div class="col-md-3">
+             <Div class="counter-item">
+               <Div><i class="fas fas1 fa-leaf"></i></Div>
+               
+               <p class="paragraph-counter">Nutrition Plans Given</p>
+             </Div>
+           </Div>
+          
+           <Div class="col-md-3">
+             <Div class="counter-item">
+               <div><i class="fas fa-biohazard	"></i></div>
+               <h2><span class="counter-number">1530</span></h2>
+               <p class="paragraph-counter">Trainers</p>
+             </Div>
+           </Div>
+        <Div class="col-md-3">
+             <Div class="counter-item">
+               <div><i class="fas fa-heart"></i></div>
+               <h2><span class="counter-number">183</span></h2>
+               <p class="paragraph-counter">Diet Plans</p>
+             </Div>
+           </Div>
+        </Div>
+      </Div>
+    </Div><div class="line1" style="border-bottom: 2px solid #66FCF1;"></div>
+  </section>
+ 
+<section class="footer ">
+  <footer class="footer ">
+    <div class="container">
+      <div class="row">
+        <Div class="col-md-12 py-5">
+          <Div class="mb-5 flex-center">
+            <a class="fb-ic social-media" href="#">
+              <i class="fab fa-facebook-f fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a class="tw-ic social-media" href="#">
+              <i class="fab fa-twitter fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+            <a class="ins-ic social-media" href="#">
+              <i class="fab fa-instagram fa-lg mr-md-5 mr-3 fa-2x"></i>
+            </a>
+          </Div>
+        </Div>
+          <div class="footer-copyright py-3 Copyright">© Copyright:
+        <a href="mailto: yossefaymanzedan@gmail.com">Yossef Ayman Zedan</a>
+      </div>
+    </div>
+  
+  </footer>
+</section>
+<script>
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 0 && scroll <= 780) {
+    $("#home1").parent().addClass("actives");
+}
+    else {
+      $("#home1").parent().removeClass("actives");
+    }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 781 && scroll <= 1550 ) {
+   $("#about1").parent().addClass("actives");
+    }
+    else {
+      $("#about1").parent().removeClass("actives");
+     }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 1551 && scroll <= 2000 ) {
+   $("#testi1").parent().addClass("actives");
+   }
+    else {
+      $("#testi1").parent().removeClass("actives");
+     }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 1551 && scroll <= 2100 ) {
+   $("#testi1").parent().addClass("actives");
+  }
+    else {
+     $("#testi1").parent().removeClass("actives");
+     }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 2110 && scroll <= 2800 ) {
+   $("#features1").parent().addClass("actives");
+   }
+    else {
+     $("#features1").parent().removeClass("actives");
+     }
+});
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+	if (scroll >= 2801 && scroll <= 3400 ) {
+   $("#contact1").parent().addClass("actives");
+   }
+    else {
+  $("#contact1").parent().removeClass("actives");
+     }
+});
+</script>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   </body>
 </html>
+<!--
+
+
+-->
