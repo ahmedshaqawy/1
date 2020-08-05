@@ -111,7 +111,7 @@ transition: all .2s;
         height: 430px; width: 430px;
     }
     .header1 {
-      
+      margin-top: 50px;
         font-size: 45px;
         width: 100%;
         text-align: center;
