@@ -272,7 +272,37 @@ footer {
     animation-duration: 1s;
     animation-delay: 0s;
   }
- 
+ @media only screen and (max-width: 400px) {
+      header {
+        height: 880px;
+    }
+    
+    .header1 {
+        width: 100%;
+        text-align: center;
+       padding-left: 20px;
+        font-size: 40px;
+        margin-left: 90px;
+    }
+    .imagehead {
+       margin-left: -25px;
+        text-align: center;
+        height: 500px;
+        width: 500px;
+    }
+    .image-about {
+        height: 300px;
+        width: 250px;
+    }
+    .testimonial {
+        margin-left: -100px;
+    }
+    .imagefeatures {
+        height: 400px;
+        width: 330px;
+    }
+     
+}
   @media only screen and (max-width: 600px) {
     header {
         height: 880px;
