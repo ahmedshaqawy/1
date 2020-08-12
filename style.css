@@ -375,6 +375,7 @@ footer {
  }
   @media (min-width: 462px) and (max-width: 600px) {
     .cont1 {
+        font-size: 23px;
         padding-right: 50px;
         padding-left: 50px;
         margin-right: 20px;
@@ -412,6 +413,7 @@ footer {
 }
 @media only screen and (min-width: 600px) {
     .cont1 {
+        font-size: 25px;
         width: 500px;
     }
     header {
